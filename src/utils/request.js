@@ -8,7 +8,7 @@ import JSONbig from 'json-bigint'
 // 创建一个 axios 实例，说白了就是复制了一个 axios 和axios本身的功能一模一样
 // 我们通过这个实例去发请求，把需要的配置配置给这个实例来处理
 const request = axios.create({
-    baseURL: 'http://api-toutiao-web.itheima.net', //请求的基础路径
+    baseURL: 'http://api-toutiao-web.itheima.net/', //请求的基础路径
     // 定制后端返回的原始数据的处理 
     // data是后端返回的原始数据（未经处理的JSON格式数据）
     transformResponse: [function (data, headers) {        
@@ -22,7 +22,8 @@ const request = axios.create({
             
         } catch (error) {
             return data
-            
+            // http://api-toutiao-web.itheima.net 
+            // http://10.168.1.163:8088/   
         }
     }],
 

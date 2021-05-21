@@ -2,7 +2,7 @@
 <!-- 使用 router 给导航菜单开启路由模式 并且使用 index 给菜单元素添加路由跳转的路径-->
   <el-menu
       class="nav-menu"
-      default-active="/"
+      :default-active= "$route.path"
       background-color="#002033"
       text-color="#fff"
       active-text-color="#ffd04b"

@@ -212,6 +212,7 @@ export default {
 
         })
             .then(res => {
+                // console.log(res);
                 const { results, total_count: totalCount} = res.data.data
                 this.articles = results
                 this.totalCount = totalCount
